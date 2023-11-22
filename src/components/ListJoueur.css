@@ -1,0 +1,9 @@
+.btt{
+    width: 200px;
+    margin-top: 10px;
+    --background : white;
+    --color: rgb(38, 73, 168);
+}
+.text{
+    text-align: center;
+}

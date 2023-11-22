@@ -1,0 +1,73 @@
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Style pour les cellules d'en-tête */
+  th {
+    background-color: #3498db; /* Changez cette couleur selon vos préférences */
+    color: #ffffff; /* Couleur du texte dans les cellules d'en-tête */
+  }
+  
+  /* Style pour les lignes paires */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  /* Appliquer un style de base pour la table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Ajoutez d'autres styles si nécessaire */
+  }
+  
+  /* Style pour les en-têtes de colonnes */
+  .custom-table th {
+    background-color: #f2f2f2;
+    /* Ajoutez d'autres styles si nécessaire */
+  }
+  
+  /* Style pour les cellules de données */
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* Ajoutez d'autres styles si nécessaire */
+  }
+  
+  /* Utilisation des médias queries pour rendre la table responsive */
+  @media only screen and (max-width: 600px) {
+    /* Réduire la taille des cellules et cacher les en-têtes */
+    .custom-table thead {
+      display: none;
+    }
+    
+    /* Afficher les données en tant que bloc */
+    .custom-table tbody, .custom-table tr, .custom-table td {
+      display: block;
+      width: 100%;
+    }
+    
+    /* Style spécifique pour les cellules en mode responsive */
+    .custom-table td {
+      text-align: left;
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    
+    /* Ajouter des styles aux données individuelles */
+    .custom-table td:before {
+      position: absolute;
+      left: 6px;
+      content: attr(data-label);
+      font-weight: bold;
+    }
+  }
+  
